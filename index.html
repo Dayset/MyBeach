@@ -14,7 +14,7 @@
     <script src="displacement-shader.js"></script>
   </head>
   <body>
-    <a-scene physics="gravity: -9.8">
+    <a-scene physics="gravity: 0.8">
 
       <a-entity id="snow" particle-system="preset: snow; particleCount: 5000; color: #FF1493;" rotation="-220 0 0" position="0 0 0"></a-entity>
       <a-entity id="snow" particle-system="preset: snow; particleCount: 5000; color: #4169E1;" rotation="-270 0 0" position="0 0 0"></a-entity>
@@ -79,7 +79,7 @@
 
 
       <!--Main floor here-->
-      <a-plane src="#floorTexture" position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="white"
+      <a-plane src="#floorTexture" position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="white"
                static-body>
       </a-plane>
       <!--Main floor here-->
