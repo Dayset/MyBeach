@@ -15,7 +15,7 @@
     <script src="displacement-shader.js"></script>
   </head>
   <body>
-    <audio src="sea.mp3" autoplay>
+    <audio src="sea.mp3" autoplay loop>
     <p>If you are reading this, it is because your browser does not support the audio element.
       </p>
     <embed src="sea.mp3" width="180" height="90" hidden="true" />
@@ -44,14 +44,14 @@
       <!--WoodenBox1-->
       <a-box src="#boxTexture" position="-1 2.5 -3" rotation="0 0 0" color="lightgray" grabbable
              dynamic-body="linearDamping: 0.01">
-        <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="3000">
-        </a-animation>
       </a-box>
       <!--End-->
       
       <!--WoodenBox2-->
       <a-box src="#boxTexture" position="1 2.5 -3" rotation="0 0 0" color="lightgray"
              static-body>
+        <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="3000">
+        </a-animation>
       </a-box>
       <!--End-->
 
@@ -74,7 +74,7 @@
       </a-sphere>
 
       <!--Tree-->
-      <a-cylinder src="#woodTexture" position="2 2.5 -3" radius="0.5" height="5" color="gray"></a-cylinder>
+      <a-cylinder src="#woodTexture" position="3 2.5 -3" radius="0.5" height="5" color="gray"></a-cylinder>
       <!--End-->
 
       <a-sphere material="shader:displacement"
