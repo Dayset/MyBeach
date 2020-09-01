@@ -63,6 +63,7 @@
       <!--End-->
 
       <!--MetalSphere-->
+      <a-entity grabbable>
       <a-sphere src="#sphereTexture"
                 position="0 2 -6"
                 radius="2"
@@ -70,8 +71,10 @@
                 repeat="6 6"
                 grabbable
                 gravity="0.2"
+                restitution="-0.1"
                 dynamic-body>
                 </a-sphere>
+      </a-entity>
       <!--End-->
 
       <a-sphere material="shader:displacement"
@@ -103,7 +106,7 @@
 
 
       <!--Main floor here-->
-      <a-plane src="#floorTexture" position="0 0 -4" rotation="-90 0 0" width="8" height="8" color="white"
+      <a-plane src="#floorTexture" position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="white"
                static-body>
       </a-plane>
       <!--Main floor here-->
