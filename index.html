@@ -10,6 +10,7 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script> 
     <script src="displacement-shader.js"></script>
   </head>
@@ -34,7 +35,10 @@
         <img id="woodTexture" metalness="1"  src="wood.jpg">
       </a-assets>
       
-
+      <a-sphere color="#00AA00" radius="0.5" position="-1 4 -4"
+                dynamic-body>
+      </a-sphere>
+      
       <!--WoodenBox-->
       <a-box src="#boxTexture" position="-1 2.5 -3" rotation="0 0 0" color="lightgray"
              dynamic-body>
