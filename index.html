@@ -13,7 +13,7 @@
     <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script> 
     <script src="https://unpkg.com/aframe-animation-component@^4.1.1/dist/aframe-animation-timeline-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-timeline-component@2.0.0/dist/aframe-animation-timeline-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-toggle-controls-component/dist/aframe-toggle-controls-component.min.js"></script>
     <script src="displacement-shader.js"></script>
   </head>
   <body>
@@ -23,13 +23,9 @@
     <embed src="sea.mp3" width="180" height="90" hidden="true" />
     </audio>
     
-    <a-scene physics="gravity: -9.8; restitution: 0.7">
-      <a-camera>
-        <a-cursor>
-        </a-cursor>
-      </a-camera>
-
-      <a-entity progressive-controls position="0 0 5"></a-entity>
+    <a-scene
+             physics="gravity: -9.8; restitution: 0.7"
+             toggle-controls="onEvents: toggleOn: offEvents: toggleOff">
       
       <a-entity id="snow" particle-system="preset: snow; particleCount: 5000; color: #FF1493;" rotation="-220 0 0" position="0 0 0"></a-entity>
       <a-entity id="snow" particle-system="preset: snow; particleCount: 5000; color: #4169E1;" rotation="-270 0 0" position="0 0 0"></a-entity>
