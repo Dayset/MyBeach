@@ -15,7 +15,7 @@
     <script src="displacement-shader.js"></script>
   </head>
   <body>
-    <a-scene physics="gravity: -9.8">
+    <a-scene physics="gravity: -9.8; restitution: 0.7">
 
       <a-entity id="snow" particle-system="preset: snow; particleCount: 5000; color: #FF1493;" rotation="-220 0 0" position="0 0 0"></a-entity>
       <a-entity id="snow" particle-system="preset: snow; particleCount: 5000; color: #4169E1;" rotation="-270 0 0" position="0 0 0"></a-entity>
@@ -36,8 +36,8 @@
       </a-assets>
       
       <!--WoodenBox-->
-      <a-box src="#boxTexture" position="-1 2.5 -3" rotation="0 0 0" color="lightgray"
-             dynamic-body>
+      <a-box src="#boxTexture" position="-1 2.5 -3" rotation="0 0 0" color="lightgray" grabbable
+             dynamic-body="linearDamping: 0.05">
       </a-box>
       <!--End-->
 
