@@ -15,6 +15,12 @@
     <script src="displacement-shader.js"></script>
   </head>
   <body>
+    <audio src="sea.mp3" autoplay>
+    <p>If you are reading this, it is because your browser does not support the audio element.
+      </p>
+    <embed src="sea.mp3" width="180" height="90" hidden="true" />
+    </audio>
+    
     <a-scene physics="gravity: -9.8; restitution: 0.7">
 
       <a-entity id="snow" particle-system="preset: snow; particleCount: 5000; color: #FF1493;" rotation="-220 0 0" position="0 0 0"></a-entity>
@@ -35,11 +41,17 @@
         <img id="woodTexture" metalness="1"  src="wood.jpg">
       </a-assets>
       
-      <!--WoodenBox-->
+      <!--WoodenBox1-->
       <a-box src="#boxTexture" position="-1 2.5 -3" rotation="0 0 0" color="lightgray" grabbable
              dynamic-body="linearDamping: 0.01">
         <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="3000">
         </a-animation>
+      </a-box>
+      <!--End-->
+      
+      <!--WoodenBox2-->
+      <a-box src="#boxTexture" position="1 2.5 -3" rotation="0 0 0" color="lightgray"
+             static-body>
       </a-box>
       <!--End-->
 
