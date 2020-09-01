@@ -51,7 +51,7 @@
       <!--End-->
       
       <!--WoodenBox2-->
-    <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
+    <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 50000; easing: linear">
       <a-box color="lightgray" position="1 0.75 -3"             
              static-body
              event-set__color="_event: collide; material.color: red">
@@ -60,15 +60,14 @@
       <!--End-->
 
       <!--MetalSphere-->
-      <a-entity grabbable dynamic-body="restitution:0.1; mass:-10;">
       <a-sphere src="#sphereTexture"
                 position="0 2.5 -6"
                 radius="2"
                 color="gold"
                 repeat="6 6"
+                dynamic-body
                 grabbable>
-                </a-sphere>
-      </a-entity>
+      </a-sphere>
       <!--End-->
 
       <a-sphere material="shader:displacement"
