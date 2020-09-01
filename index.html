@@ -52,7 +52,8 @@
       <!--WoodenBox2-->
     <a-entity animation="property: rotation; to: 0 360 0; loop: true; dur: 30000">
       <a-box color="lightgray" position="1 0.5 -3"             
-             static-body>
+             static-body
+             event-set__color="_event: collide; material.color: red">
       </a-box>
      </a-entity>
       <!--End-->
