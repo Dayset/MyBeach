@@ -37,7 +37,9 @@
       
       <!--WoodenBox-->
       <a-box src="#boxTexture" position="-1 2.5 -3" rotation="0 0 0" color="lightgray" grabbable
-             dynamic-body="linearDamping: 0.05">
+             dynamic-body="linearDamping: 0.01">
+        <a-animation attribute="rotation" to="0 360 0" repeat="indefinite" dur="3000">
+        </a-animation>
       </a-box>
       <!--End-->
 
